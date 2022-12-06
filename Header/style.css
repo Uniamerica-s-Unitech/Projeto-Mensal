@@ -1,0 +1,67 @@
+*{
+    font-family: 'inter';
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #161A1E;
+}
+
+#logo{
+    display: flex;
+    text-decoration: none;
+    color: #9A9A9A;
+    cursor: text;
+}
+
+#logo-icon{
+    margin: 0px -20px 0px 20px;
+}
+
+.logo-letra-larengada{
+    font-size: 45px;
+    color: #E58E27;
+}
+
+#nav{
+    margin-right: 30px;
+}
+
+#lista{
+    list-style: none;
+}
+
+.item{
+    float: left;
+}
+
+.item:hover{
+    transform: scale(1.09,1.09);
+    transition: 0s;
+}
+
+.link{
+    font-size: 20px;
+    padding: 15px;
+    margin-left: 15px;
+    text-decoration: none;
+    color: #9A9A9A;
+    border-radius: 20px;
+}
+
+.link:hover{
+    background-color: #9A9A9A;
+    color: #fff;
+    
+}
+
+.link:active{
+    color: #E58E27;
+}
