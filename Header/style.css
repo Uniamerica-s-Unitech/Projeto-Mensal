@@ -44,7 +44,7 @@ header{
 
 .item:hover{
     transform: scale(1.09,1.09);
-    transition: 0s;
+    transition: 0.3s;
 }
 
 .link{
