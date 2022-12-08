@@ -1,0 +1,15 @@
+#games{
+    gap: 1rem;
+    margin:1rem 0rem 0rem 3rem;
+}
+
+#games article{
+    display: flex;
+    gap: 1rem;
+    background-color: white;
+    margin: 1rem;
+}
+
+#games h4{
+    color: black;
+}

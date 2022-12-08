@@ -8,7 +8,6 @@
 
 #sidebar{
     display: block;
-    position: absolute;
     top: 6rem;
     background-color: var(--sidebar-background-color);
     border-style: solid;
