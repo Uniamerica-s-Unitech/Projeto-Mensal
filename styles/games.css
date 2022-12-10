@@ -1,9 +1,10 @@
 #games{
-    padding-top: 1.5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 2rem;
     gap: 1.5rem;
-    margin-left: 20rem;
-    margin-top: 5.5rem;
-    width: 80%;
+    margin-left: 22rem;
+    margin-top: 4.5rem;
+    width: 100%;
     display: flex;
     z-index: 0;
     flex-flow: wrap;
@@ -13,19 +14,33 @@
 
 #games article{
     display: flex;
-    align-items: flex-start;
-    background-color: white;
-    min-width: clamp(31%,2vw,33%);
-    height: 30vh;
-    border-radius: 1vw;
+    flex-direction: column;
+    width: 30%;
+    gap:0.5rem;
 }
 
-#games article:hover{
-    transform: scale(1.03);
-    transition: 0.3s;
-    z-index: 1;
+#games article div{
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-end;
+    padding: 1rem;
+    background-image: url(/imgs/game-list/img-test.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: clamp(12rem,1vw,5rem);
+    border-radius: 1rem;
 }
 
-#games h4{
-    color: black;
+#games article div img{
+    width: 1.5rem;
 }
+
+#games article span{
+    display: -webkit-box;
+    margin: 0 auto;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
