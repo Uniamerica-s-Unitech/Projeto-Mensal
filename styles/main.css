@@ -1,0 +1,63 @@
+main {
+  display: flex;
+  margin: 0;
+}
+
+#banner {
+  margin: 1.5rem;
+}
+
+#banner .banner-image {
+  width: 79vw;
+  height: 35vh;
+
+  background-color: #C4C4C4;
+  border-radius: 30px;
+}
+
+.list-games {
+  width: 79vw;
+  margin: 1rem 1.5rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.list-games .image {
+  width: 25vw;
+  height: 22vh;
+  border-radius: 30px;
+  background-color: #C4C4C4;
+}
+
+.banner-container {
+  position: relative;
+}
+
+.games-container {
+  position: relative;
+}
+
+.games-container p {
+  position: absolute;
+  top: 160px;
+  right: 380px;
+  font-size: 18px;
+  color: white;
+}
+
+.games-container .icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 18px;
+}
+
+.banner-container .banner-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 18px;
+}
