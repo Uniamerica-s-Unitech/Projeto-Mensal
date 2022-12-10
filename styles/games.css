@@ -17,6 +17,18 @@
     flex-direction: column;
     width: 30%;
     gap:0.5rem;
+    transition: 0.5s;
+
+}
+
+#games article:hover{
+    transform: scale(1.03);
+    transition: 0.5s;
+}
+
+#games article:hover h3{
+    color: orange;
+    transition: 1s;
 }
 
 #games article div{
@@ -29,10 +41,13 @@
     background-position: center;
     height: clamp(12rem,1vw,5rem);
     border-radius: 1rem;
+    -webkit-box-shadow: inset 0px 29px 104px -26px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 29px 104px -26px rgba(0,0,0,0.75);
+box-shadow: inset 0px 29px 104px -26px rgba(0,0,0,0.75);
 }
 
 #games article div img{
-    width: 1.5rem;
+    width: 1rem;
 }
 
 #games article span{

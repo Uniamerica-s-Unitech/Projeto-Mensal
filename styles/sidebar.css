@@ -67,6 +67,8 @@
     cursor: pointer;
     border-radius: 1rem;
     padding: 0rem 1rem 0rem 1rem;
+    transition: 0.3s;
+
 }
 
 #sidebar section ul li img{
