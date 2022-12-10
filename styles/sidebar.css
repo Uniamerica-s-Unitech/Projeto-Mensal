@@ -8,6 +8,8 @@
 
 #sidebar{
     display: block;
+    z-index: 1;
+    position: fixed;
     top: 6rem;
     background-color: var(--sidebar-background-color);
     border-style: solid;
