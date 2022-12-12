@@ -1,4 +1,6 @@
 let gamesElement = document.getElementById("games");
+let moreGamesBtn = document.getElementById("moreGamesBtn");
+let gamesInPage = 10;
 const options = {
 	method: 'GET',
 	headers: {
@@ -7,9 +9,15 @@ const options = {
 	}
 };
 
-getApiData();
+getApiData(gamesInPage);
+moreGamesBtn.addEventListener('click',showMoreGames)
 
-async function getApiData(){
+function showMoreGames(){
+	gamesInPage = gamesInPage+10;
+	getApiData(gamesInPage);
+}
+
+async function getApiData(gamesInPage){
 
 	let requestJustMade = await fetch('https://free-to-play-games-database.p.rapidapi.com/api/games', options);
 
@@ -17,8 +25,9 @@ async function getApiData(){
 	console.log(myJson);
 
 	let justAddedArticle;
+	gamesElement.innerHTML = '';
 
-	for(let i=0;i<100;i++){
+	for(let i=0;i<gamesInPage;i++){
 		
 		let newArticle = elementBuilder(myJson[i])
 		gamesElement.innerHTML += newArticle;

@@ -36,7 +36,6 @@
     align-items:flex-start;
     justify-content: space-between;
     padding: 1rem;
-    background-image: url(/imgs/game-list/img-test.jpeg);
     background-size: cover;
     background-position: center;
     height: clamp(12rem,1vw,5rem);
@@ -49,6 +48,7 @@
 #games article div img{
     width: 1rem;
     transition: 0.3s;
+    cursor: pointer;
 }
 
 #games article div img:hover{
@@ -73,6 +73,7 @@
     align-items:flex-start;
     justify-content: flex-start;
     margin-right: 6rem;
+    cursor: pointer;
 }
 #games article:first-child div{
     width:59%;
