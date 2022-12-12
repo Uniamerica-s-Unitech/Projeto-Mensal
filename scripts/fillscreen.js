@@ -8,6 +8,7 @@ const options = {
 		'X-RapidAPI-Host': 'free-to-play-games-database.p.rapidapi.com'
 	}
 };
+let baseURL = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
 
 getApiData(gamesInPage);
 moreGamesBtn.addEventListener('click',showMoreGames)
@@ -19,8 +20,8 @@ function showMoreGames(){
 
 async function getApiData(gamesInPage){
 
-	let requestJustMade = await fetch('https://free-to-play-games-database.p.rapidapi.com/api/games', options);
-
+	let requestJustMade = await fetch(baseURL, options);
+	
 	let myJson = await requestJustMade.json();
 	console.log(myJson);
 
