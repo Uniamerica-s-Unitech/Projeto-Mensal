@@ -25,7 +25,7 @@ async function getApiData(gamesInPage){
 	console.log(myJson);
 
 	let justAddedArticle;
-	gamesElement.innerHTML = '';
+	gamesElement.innerHTML = '';	
 
 	for(let i=0;i<gamesInPage;i++){
 		
