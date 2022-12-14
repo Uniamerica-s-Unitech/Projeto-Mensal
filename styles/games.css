@@ -97,3 +97,9 @@
     font-size: 1.3rem;
 }
 
+#moreGamesBtn{
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    margin-left: 20rem;
+}
