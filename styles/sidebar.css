@@ -81,15 +81,11 @@
     background-color: var(--accent-orange);
 }
 
-#active-sidebar-item{
+#rpg{
     font-weight: 600;
 }
 
-#active-sidebar-item p{
-    color: var(--accent-orange);
-}
-
-#active-sidebar-item:hover p{
+#rpg:hover p{
     color: white;
 }
 
