@@ -11,7 +11,8 @@ const options = {
 let baseURL = 'https://free-to-play-games-database.p.rapidapi.com/api/games';
 
 getApiData(gamesInPage);
-moreGamesBtn.addEventListener('click',showMoreGames)
+
+moreGamesBtn.addEventListener('click',showMoreGames);
 
 function showMoreGames(){
 	gamesInPage = gamesInPage+10;
@@ -21,16 +22,13 @@ function showMoreGames(){
 async function getApiData(gamesInPage){
 
 	let requestJustMade = await fetch(baseURL, options);
-	
 	let myJson = await requestJustMade.json();
-	console.log(myJson);
-
 	let justAddedArticle;
+
 	gamesElement.innerHTML = '';	
 
 	for(let i=0;i<gamesInPage;i++){
-		
-		let newArticle = elementBuilder(myJson[i])
+		let newArticle = elementBuilder(myJson[i]);
 		gamesElement.innerHTML += newArticle;
 		justAddedArticle = document.getElementById(myJson[i].id);
 		justAddedArticle.style.backgroundImage = "url("+myJson[i].thumbnail+")";
@@ -38,9 +36,7 @@ async function getApiData(gamesInPage){
 }
 
 function elementBuilder(gameObj){
-	
+
 	let newArticle = "<article><div id="+gameObj.id+"><img src=/imgs/game-list/bookmark.svg></div><span><h3>"+gameObj.title+"</h3><p>"+gameObj.short_description+"</p></span></article>";
-
 	return newArticle;
-
 }
