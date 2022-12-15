@@ -21,6 +21,7 @@
     border-top: hidden;
     border-left: hidden;
     border-right: hidden;
+    
 
 }
 
@@ -61,3 +62,89 @@
     background-color: var(--accent-grey);
     font-weight: 600;
 }
+.mymove {  
+    position: absolute;
+    animation: mymove 7s ;
+    z-index: 3;
+    padding-left: 2rem;
+    float: left;
+    left: 0; 
+}
+.abertura{
+    width: 98.8vw;
+    height: 100vh;
+    position: absolute;
+    background: #161A1E;
+    z-index: -2;
+    animation: abertura 12s;
+}
+
+
+@keyframes mymove { 
+    0% {
+     top: 0;
+     left: -30vw;
+     bottom: 0;
+     transform: scale(5);
+     display: flex;
+   }
+   30% {
+     top: 20vw;
+     left: -15vw;
+     transform: scale(5);
+   }
+   40% {
+     left: 40vw;
+     top: 20vw;
+     transform: scale(10);
+   }
+   50% {
+     left: 40vw;
+     top: 20vw;
+     transform: rotate(1200deg);
+   }
+   100% {
+     top: 0;
+     left: 0;
+     display: none;
+   }
+ }
+ @keyframes abertura { 
+    0% {
+        top: 0rem;
+        z-index: 2;
+      }
+      10% {
+        top: 0rem;
+        z-index: 2;
+
+       }
+       20% {
+        top: 0rem;
+        z-index: 2;
+
+       }
+       30% {
+        top: 0rem;
+        z-index: 2;
+       }
+       40% {
+        top: 0rem;
+        z-index: 2;
+       }
+      50% {
+        z-index: 2;
+      }
+      60% {
+        z-index: 2;
+      }
+      70% {
+        z-index: 2;
+      }
+      100% {
+        top: 100rem;
+        z-index: 2;
+        visibility: hidden
+       }
+ }
+
