@@ -31,7 +31,7 @@
     transition: 1s;
 }
 
-#games article div{
+#games article a{
     display: flex;
     align-items:flex-start;
     justify-content: space-between;
@@ -46,13 +46,13 @@
     background-image: url(/imgs/game-list/img-test.jpeg);
 }
 
-#games article div img{
+#games article a img{
     width: 1rem;
     transition: 0.3s;
     cursor: pointer;
 }
 
-#games article div img:hover{
+#games article a img:hover{
     transform: scale(1.15);
     transition: 0.3s;
     cursor: pointer;
@@ -76,7 +76,7 @@
     margin-right: 6rem;
     cursor: pointer;
 }
-#games article:first-child div{
+#games article:first-child a{
     width:59%;
     height: 20rem;
 }
