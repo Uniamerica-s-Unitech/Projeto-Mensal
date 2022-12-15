@@ -87,7 +87,15 @@ async function getApiData(gamesInPage){
 }
 
 function elementBuilder(gameObj){
-
-	let newArticle = "<article><div id="+gameObj.id+"><img src=/imgs/game-list/bookmark.svg></div><span><h3>"+gameObj.title+"</h3><p>"+gameObj.short_description+"</p></span></article>";
+	let newArticle = `
+		<article>
+			<div id=${gameObj.id}>
+				<img src=/imgs/game-list/bookmark.svg>
+			</div>
+			<span>
+				<h3>${gameObj.title}</h3>
+				<p>${gameObj.short_description}</p>
+			</span>
+		</article>`;
 	return newArticle;
 }
