@@ -43,6 +43,7 @@
     -webkit-box-shadow: inset 0px 29px 104px -26px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 29px 104px -26px rgba(0,0,0,0.75);
     box-shadow: inset 0px 29px 104px -26px rgba(0,0,0,0.75);
+    background-image: url(/imgs/game-list/img-test.jpeg);
 }
 
 #games article div img{
