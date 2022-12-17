@@ -104,8 +104,9 @@ async function getApiData(gamesInPage,params,favOnly){
 }
 
 function elementBuilder(gameObj){
-
-	let newArticle = "<article><a href="+gameObj.freetogame_profile_url+" id="+gameObj.id+"><img onclick='showID("+gameObj.id+")' src=/imgs/game-list/bookmark.svg></a href="+gameObj.freetogame_profile_url+"><span><h3>"+gameObj.title+"</h3><p>"+gameObj.short_description+"</p></span></article>";
+	//target='_blank' href="+gameObj.freetogame_profile_url+"
+	let newArticle = 
+		"<article><a id="+gameObj.id+"><img onclick='showID("+gameObj.id+")' src=/imgs/game-list/bookmark.svg></a href="+gameObj.freetogame_profile_url+"><span><h3>"+gameObj.title+"</h3><p>"+gameObj.short_description+"</p></span></article>";
 	return newArticle;
 }
 

@@ -9,7 +9,7 @@
     display: block;
     z-index: 1;
     position: fixed;
-    top: 5rem;
+    top: 6rem;
     background-color: var(--sidebar-background-color);
     border-style: solid;
     border-color: var(--sidebar-border-color);
